@@ -1,0 +1,151 @@
+/* Reset y estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Menú lateral que se adapta */
+aside nav {
+    background-color: #333;
+}
+
+aside nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+aside nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    border-bottom: 1px solid #444;
+}
+
+aside nav ul li a:hover {
+    background-color: #444;
+}
+
+/* Hero */
+.hero {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.hero h2 {
+    margin-bottom: 1rem;
+}
+
+.btn {
+    background-color: #e91e63;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+/* Sección de servicios */
+#servicios {
+    padding: 2rem 1rem;
+    background-color: #fff;
+}
+
+.servicios-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.servicio {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.servicio img {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+
+/* Galería */
+.galeria-expandible {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.img-galeria {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Horarios y otras secciones */
+#horarios, #videos, #contacto {
+    padding: 2rem 1rem;
+    background-color: #fff;
+    margin-top: 1rem;
+}
+
+video {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* RESPONSIVE para pantallas grandes */
+@media (min-width: 768px) {
+    .servicios-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .servicio {
+        width: 30%;
+    }
+
+    .galeria-expandible {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .img-galeria {
+        width: 48%;
+    }
+
+    aside nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
