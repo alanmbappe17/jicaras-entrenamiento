@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d; 
+    color: #f0e6ff; 
+    scroll-behavior: smooth;
+}
+
+
+header {
+    background-color: #1a001a; 
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #c77dff; 
+    margin: 0;
+}
+
+
+aside {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #1a001a;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 15px;
+}
+
+aside ul li a {
+    color: #bb86fc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+aside ul li a:hover {
+    color: #ffffff;
+}
+
+
+.hero {
+    background: linear-gradient(to right, #2a003f, #1a001a);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    color: #e0b3ff;
+    font-size: 28px;
+}
+
+.hero p {
+    color: #d8baff;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #c77dff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+section {
+    padding: 40px 20px;
+}
+
+
+.servicios-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.servicio {
+    background-color: #1a001a;
+    border: 1px solid #3d0066;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.servicio img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+
+.galeria-expandible img {
+    width: 100%;
+    max-width: 140px;
+    margin: 5px;
+    border: 2px solid #6a0dad;
+    border-radius: 6px;
+}
+
+
+video {
+    width: 100%;
+    border: 3px solid #bb86fc;
+    border-radius: 8px;
+}
+
+
+footer {
+    background-color: #1a001a;
+    color: #c77dff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+
+body {
+    margin-right: 220px;
+}
